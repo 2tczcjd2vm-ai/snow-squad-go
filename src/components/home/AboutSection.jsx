@@ -1,0 +1,127 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Users, MapPin, Trophy, Heart, ShieldCheck, Zap } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
+
+const features = [
+  {
+    icon: Users,
+    title: 'Pro děti 10–15 let',
+    description: 'Zaměřujeme se výhradně na mládež z Prahy a okolí. Malé skupiny zajišťují individuální přístup každému jezdci.',
+  },
+  {
+    icon: MapPin,
+    title: '6–10 soustředění ročně',
+    description: 'Jezdíme do Rakouska, Itálie, Francie a Švýcarska. Každé soustředění má pečlivě vybranou destinaci s perfektními podmínkami.',
+  },
+  {
+    icon: Trophy,
+    title: 'Certifikovaní trenéři',
+    description: 'Všichni naši instruktoři mají mezinárodní certifikaci a bohaté zkušenosti s výukou dětí a mládeže.',
+  },
+  {
+    icon: ShieldCheck,
+    title: 'Bezpečnost na prvním místě',
+    description: 'Komplexní pojištění, lékárnička na místě, přesné bezpečnostní protokoly a max. 8 dětí na trenéra.',
+  },
+  {
+    icon: Heart,
+    title: 'Skvělá parta',
+    description: 'Každé soustředění je i společenská akce. Děti si nacházejí nové kamarády a zažívají dobrodružství.',
+  },
+  {
+    icon: Zap,
+    title: 'Rychlý pokrok',
+    description: 'Díky intenzivní výuce a opakovaným soustředěním za sezónu jezdci dělají neuvěřitelný pokrok.',
+  },
+];
+
+export default function AboutSection() {
+  return (
+    <section className="py-24 bg-background" id="o-nas">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+          >
+            <span className="text-sm font-semibold text-accent uppercase tracking-wider">O nás</span>
+            <h2 className="font-heading font-bold text-3xl sm:text-4xl mt-3 mb-6">
+              Proč si vybrat<br />
+              <span className="text-primary">SnowRiders?</span>
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-4">
+              Jsme pražský snowboardový klub, který vznikl s jedním cílem — dát pražským dětem 
+              přístup ke světové kvalitě výuky snowboardingu a nezapomenutelným zážitkům v horách.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mb-8">
+              Za 5 let existence jsme odvedli přes 120 mladých jezdců na soustředění do celé Evropy. 
+              Věříme, že snowboarding není jen sport — je to životní styl, komunita a láska k horám.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Link to="/camps">
+                <Button className="bg-primary hover:bg-primary/90 font-semibold">
+                  Prohlédnout soustředění
+                </Button>
+              </Link>
+              <Link to="/team">
+                <Button variant="outline" className="font-semibold">
+                  Poznat náš tým
+                </Button>
+              </Link>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="relative"
+          >
+            <div className="aspect-[4/3] rounded-2xl overflow-hidden">
+              <img
+                src="https://media.base44.com/images/public/69de2e87ca4221fb80b44806/eaad43f7c_generated_c0218c28.png"
+                alt="Výuka snowboardingu"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="absolute -bottom-6 -left-6 bg-card border border-border/50 rounded-2xl p-4 shadow-xl">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center">
+                  <Trophy className="w-5 h-5 text-accent" />
+                </div>
+                <div>
+                  <p className="font-heading font-bold text-sm">Nejlepší klub roku</p>
+                  <p className="text-xs text-muted-foreground">Praha Snowboard Awards 2024</p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {features.map((feature, index) => (
+            <motion.div
+              key={feature.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.08 }}
+              className="bg-card rounded-2xl p-6 border border-border/50 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 group"
+            >
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/15 transition-colors">
+                <feature.icon className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="font-heading font-semibold text-lg mb-2">{feature.title}</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">{feature.description}</p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

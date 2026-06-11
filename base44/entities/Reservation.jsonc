@@ -1,0 +1,56 @@
+{
+  "name": "Reservation",
+  "type": "object",
+  "properties": {
+    "child_name": {
+      "type": "string",
+      "description": "Jm\u00e9no d\u00edt\u011bte"
+    },
+    "child_age": {
+      "type": "number",
+      "description": "V\u011bk d\u00edt\u011bte"
+    },
+    "parent_name": {
+      "type": "string",
+      "description": "Jm\u00e9no rodi\u010de"
+    },
+    "parent_email": {
+      "type": "string",
+      "description": "Email rodi\u010de"
+    },
+    "parent_phone": {
+      "type": "string",
+      "description": "Telefon rodi\u010de"
+    },
+    "camp_id": {
+      "type": "string",
+      "description": "ID soust\u0159ed\u011bn\u00ed"
+    },
+    "camp_title": {
+      "type": "string",
+      "description": "N\u00e1zev soust\u0159ed\u011bn\u00ed"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "confirmed",
+        "cancelled"
+      ],
+      "default": "pending",
+      "description": "Stav rezervace"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Pozn\u00e1mky (alergie, zdravotn\u00ed omezen\u00ed apod.)"
+    }
+  },
+  "required": [
+    "child_name",
+    "child_age",
+    "parent_name",
+    "parent_email",
+    "parent_phone",
+    "camp_id"
+  ]
+}

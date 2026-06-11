@@ -1,0 +1,31 @@
+{
+  "name": "TeamMember",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Jm\u00e9no"
+    },
+    "role": {
+      "type": "string",
+      "description": "Pozice v t\u00fdmu"
+    },
+    "bio": {
+      "type": "string",
+      "description": "Kr\u00e1tk\u00fd popis"
+    },
+    "photo_url": {
+      "type": "string",
+      "description": "URL fotky"
+    },
+    "order": {
+      "type": "number",
+      "default": 0,
+      "description": "Po\u0159ad\u00ed zobrazen\u00ed"
+    }
+  },
+  "required": [
+    "name",
+    "role"
+  ]
+}

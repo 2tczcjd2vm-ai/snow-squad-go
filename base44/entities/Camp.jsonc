@@ -1,0 +1,67 @@
+{
+  "name": "Camp",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "N\u00e1zev soust\u0159ed\u011bn\u00ed"
+    },
+    "location": {
+      "type": "string",
+      "description": "M\u00edsto kon\u00e1n\u00ed (m\u011bsto, zem\u011b)"
+    },
+    "country": {
+      "type": "string",
+      "description": "Zem\u011b"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Datum za\u010d\u00e1tku"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Datum konce"
+    },
+    "price": {
+      "type": "number",
+      "description": "Cena v CZK"
+    },
+    "capacity": {
+      "type": "number",
+      "description": "Maxim\u00e1ln\u00ed kapacita"
+    },
+    "spots_taken": {
+      "type": "number",
+      "default": 0,
+      "description": "Obsazen\u00e1 m\u00edsta"
+    },
+    "description": {
+      "type": "string",
+      "description": "Popis soust\u0159ed\u011bn\u00ed"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "URL obr\u00e1zku"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "upcoming",
+        "full",
+        "completed"
+      ],
+      "default": "upcoming",
+      "description": "Stav soust\u0159ed\u011bn\u00ed"
+    }
+  },
+  "required": [
+    "title",
+    "location",
+    "start_date",
+    "end_date",
+    "price",
+    "capacity"
+  ]
+}

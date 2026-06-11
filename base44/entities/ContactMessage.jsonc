@@ -1,0 +1,27 @@
+{
+  "name": "ContactMessage",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Jm\u00e9no odes\u00edlatele"
+    },
+    "email": {
+      "type": "string",
+      "description": "Email"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Telefon"
+    },
+    "message": {
+      "type": "string",
+      "description": "Zpr\u00e1va"
+    }
+  },
+  "required": [
+    "name",
+    "email",
+    "message"
+  ]
+}

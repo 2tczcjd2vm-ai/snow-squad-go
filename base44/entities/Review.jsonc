@@ -1,0 +1,27 @@
+{
+  "name": "Review",
+  "type": "object",
+  "properties": {
+    "author_name": {
+      "type": "string",
+      "description": "Jm\u00e9no autora recenze"
+    },
+    "rating": {
+      "type": "number",
+      "description": "Hodnocen\u00ed 1-5"
+    },
+    "text": {
+      "type": "string",
+      "description": "Text recenze"
+    },
+    "relation": {
+      "type": "string",
+      "description": "Vztah k klubu (rodi\u010d, \u010dlen apod.)"
+    }
+  },
+  "required": [
+    "author_name",
+    "rating",
+    "text"
+  ]
+}
