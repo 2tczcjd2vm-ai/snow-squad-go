@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
+import { supabase } from '@/api/supabaseClient';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { toast } from 'sonner';
 import { Plus, Pencil, Trash2, Snowflake, X, Save, Loader2, ChevronLeft } from 'lucide-react';
@@ -15,12 +15,15 @@ export default function AdminCamps() {
 
   const { data: camps = [], isLoading } = useQuery({
     queryKey: ['admin-camps'],
-    queryFn: () => base44.entities.Camp.list('start_date', 50),
+    queryFn: async () => {
+      const { data } = await supabase.from('camps').select('*').order('start_date').limit(50);
+      return data || [];
+    },
     initialData: [],
   });
 
   const deleteMutation = useMutation({
-    mutationFn: (id) => base44.entities.Camp.delete(id),
+    mutationFn: (id) => supabase.from('camps').delete().eq('id', id),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['admin-camps'] });
       toast.success('Soustředění smazáno');

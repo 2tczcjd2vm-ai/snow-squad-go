@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { base44 } from '@/api/base44Client';
+import { supabase } from '@/api/supabaseClient';
 import { useMutation } from '@tanstack/react-query';
 import { toast } from "sonner";
 import { Loader2, CheckCircle2 } from 'lucide-react';
@@ -24,16 +24,16 @@ export default function ReservationDialog({ camp, open, onClose }) {
 
   const mutation = useMutation({
     mutationFn: async () => {
-      await base44.entities.Reservation.create({
+      await supabase.from('reservations').insert({
         ...form,
         child_age: Number(form.child_age),
         camp_id: camp.id,
         camp_title: camp.title,
         status: 'pending',
       });
-      await base44.entities.Camp.update(camp.id, {
+      await supabase.from('camps').update({
         spots_taken: (camp.spots_taken || 0) + 1,
-      });
+      }).eq('id', camp.id);
     },
     onSuccess: () => {
       setSuccess(true);

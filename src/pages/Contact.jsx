@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { base44 } from '@/api/base44Client';
+import { supabase } from '@/api/supabaseClient';
 import { useMutation } from '@tanstack/react-query';
 import { toast } from "sonner";
 import { motion } from 'framer-motion';
@@ -27,7 +27,7 @@ function RegisterForm() {
   });
 
   const mutation = useMutation({
-    mutationFn: (data) => base44.entities.ContactMessage.create({
+    mutationFn: (data) => supabase.from('contact_messages').insert({
       name: data.name,
       email: data.email,
       phone: data.phone,
@@ -143,7 +143,7 @@ function ContactForm() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' });
 
   const mutation = useMutation({
-    mutationFn: (data) => base44.entities.ContactMessage.create(data),
+    mutationFn: (data) => supabase.from('contact_messages').insert(data),
     onSuccess: () => {
       setSuccess(true);
       toast.success('Zpráva odeslána!');

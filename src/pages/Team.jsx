@@ -1,5 +1,5 @@
 import React from 'react';
-import { base44 } from '@/api/base44Client';
+import { supabase } from '@/api/supabaseClient';
 import { useQuery } from '@tanstack/react-query';
 import { motion } from 'framer-motion';
 import { Snowflake, Award, Shield, Heart } from 'lucide-react';
@@ -15,7 +15,10 @@ const values = [
 export default function Team() {
   const { data: members = [], isLoading } = useQuery({
     queryKey: ['team'],
-    queryFn: () => base44.entities.TeamMember.list('order', 20),
+    queryFn: async () => {
+      const { data } = await supabase.from('team_members').select('*').order('order').limit(20);
+      return data || [];
+    },
     initialData: [],
   });
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
+import { supabase } from '@/api/supabaseClient';
 import { useMutation } from '@tanstack/react-query';
 import { toast } from 'sonner';
 import { X, Save, Loader2 } from 'lucide-react';
@@ -31,9 +31,9 @@ export default function CampFormModal({ camp, onClose, onSaved }) {
         spots_taken: Number(form.spots_taken),
       };
       if (isEdit) {
-        await base44.entities.Camp.update(camp.id, data);
+        await supabase.from('camps').update(data).eq('id', camp.id);
       } else {
-        await base44.entities.Camp.create(data);
+        await supabase.from('camps').insert(data);
       }
     },
     onSuccess: () => {

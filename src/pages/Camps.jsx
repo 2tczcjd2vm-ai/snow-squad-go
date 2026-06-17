@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
+import { supabase } from '@/api/supabaseClient';
 import { useQuery } from '@tanstack/react-query';
 import { motion } from 'framer-motion';
 import { Snowflake, Calendar, MapPin } from 'lucide-react';
@@ -19,7 +19,10 @@ export default function Camps() {
 
   const { data: camps = [], isLoading } = useQuery({
     queryKey: ['camps'],
-    queryFn: () => base44.entities.Camp.list('start_date', 20),
+    queryFn: async () => {
+      const { data } = await supabase.from('camps').select('*').order('start_date').limit(20);
+      return data || [];
+    },
     initialData: [],
   });
 

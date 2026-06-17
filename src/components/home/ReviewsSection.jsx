@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Star, Quote } from 'lucide-react';
-import { base44 } from '@/api/base44Client';
+import { supabase } from '@/api/supabaseClient';
 import { useQuery } from '@tanstack/react-query';
 
 function StarRating({ rating }) {
@@ -26,7 +26,10 @@ const fallbackReviews = [
 export default function ReviewsSection() {
   const { data: reviews = [] } = useQuery({
     queryKey: ['reviews'],
-    queryFn: () => base44.entities.Review.list('-created_date', 6),
+    queryFn: async () => {
+      const { data } = await supabase.from('reviews').select('*').order('created_at', { ascending: false }).limit(6);
+      return data || [];
+    },
     initialData: [],
   });
 

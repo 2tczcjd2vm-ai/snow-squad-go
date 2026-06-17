@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { base44 } from '@/api/base44Client';
+import { supabase } from '@/api/supabaseClient';
 import { useQuery } from '@tanstack/react-query';
 import { MapPin, Calendar, Users, ArrowRight, Snowflake } from 'lucide-react';
 import { format } from 'date-fns';
@@ -14,7 +14,10 @@ export default function UpcomingCampsPreview() {
 
   const { data: camps = [] } = useQuery({
     queryKey: ['camps-preview'],
-    queryFn: () => base44.entities.Camp.filter({ status: 'upcoming' }, 'start_date', 3),
+    queryFn: async () => {
+      const { data } = await supabase.from('camps').select('*').eq('status', 'upcoming').order('start_date').limit(3);
+      return data || [];
+    },
     initialData: [],
   });
 
