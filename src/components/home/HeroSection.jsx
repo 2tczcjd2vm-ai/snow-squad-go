@@ -9,7 +9,7 @@ export default function HeroSection() {
     <section className="relative min-h-[92vh] flex items-center overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="https://media.base44.com/images/public/69de2e87ca4221fb80b44806/e40eb8d25_generated_image.png"
+          src="https://velzztwnhpchyojopzkv.supabase.co/storage/v1/object/public/images/hero.jpg"
           alt="Profesionální freestyle snowboardista"
           className="w-full h-full object-cover"
         />
