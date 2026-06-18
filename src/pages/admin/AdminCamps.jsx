@@ -62,7 +62,7 @@ export default function AdminCamps() {
     <div
       className="min-h-screen relative"
       style={{
-        backgroundImage: `url('https://media.base44.com/images/public/69de2e87ca4221fb80b44806/456e8fcdd_generated_image.png')`,
+        backgroundImage: `url('https://velzztwnhpchyojopzkv.supabase.co/storage/v1/object/public/images/hero.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',

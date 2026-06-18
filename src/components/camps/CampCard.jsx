@@ -21,7 +21,7 @@ export default function CampCard({ camp, onReserve, index }) {
     >
       <div className="aspect-[16/9] relative overflow-hidden">
         <img
-          src={camp.image_url || 'https://media.base44.com/images/public/69de2e87ca4221fb80b44806/dbeb4e165_generated_36645ea2.png'}
+          src={camp.image_url || 'https://velzztwnhpchyojopzkv.supabase.co/storage/v1/object/public/images/gallery-5.jpg'}
           alt={camp.title}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />

@@ -84,7 +84,7 @@ export default function AboutSection() {
           >
             <div className="aspect-[4/3] rounded-2xl overflow-hidden">
               <img
-                src="https://media.base44.com/images/public/69de2e87ca4221fb80b44806/eaad43f7c_generated_c0218c28.png"
+                src="https://velzztwnhpchyojopzkv.supabase.co/storage/v1/object/public/images/gallery-6.jpg"
                 alt="Výuka snowboardingu"
                 className="w-full h-full object-cover"
               />

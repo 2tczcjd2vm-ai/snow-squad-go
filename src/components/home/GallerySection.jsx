@@ -2,26 +2,28 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ZoomIn } from 'lucide-react';
 
+const BASE = 'https://velzztwnhpchyojopzkv.supabase.co/storage/v1/object/public/images';
+
 const images = [
   {
-    src: 'https://media.base44.com/images/public/69de2e87ca4221fb80b44806/f5237e2d7_generated_f47e4b3e.png',
-    alt: 'Skupinová fotka snowboardistů',
-    caption: 'Naše parta na soustředění v Mayrhofen',
+    src: `${BASE}/gallery-1.jpg`,
+    alt: 'Snowboard na svahu',
+    caption: 'Naše soustředění v Alpách',
   },
   {
-    src: 'https://media.base44.com/images/public/69de2e87ca4221fb80b44806/c77495285_generated_8e3c37cb.png',
-    alt: 'Snowboard jump',
+    src: `${BASE}/gallery-2.jpg`,
+    alt: 'Snowboard akce',
     caption: 'Freestyle triky ve snowparku',
   },
   {
-    src: 'https://media.base44.com/images/public/69de2e87ca4221fb80b44806/eaad43f7c_generated_c0218c28.png',
-    alt: 'Trénink na svahu',
+    src: `${BASE}/gallery-3.jpg`,
+    alt: 'Jezdec ve vzduchu',
     caption: 'Ranní trénink s instruktorem',
   },
   {
-    src: 'https://media.base44.com/images/public/69de2e87ca4221fb80b44806/48bb6e405_generated_6e3ac8e2.png',
-    alt: 'Večer na chatě',
-    caption: 'Odpolední relax v chatě po ježdění',
+    src: `${BASE}/gallery-4.jpg`,
+    alt: 'Snowboard soustředění',
+    caption: 'Skvělá parta na sněhu',
   },
 ];
 
