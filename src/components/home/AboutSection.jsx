@@ -53,13 +53,13 @@ export default function AboutSection() {
               Náš příběh
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-              Náš klub byl založen Tomášem Tuzarem a Filipem Gutwirthem. Skamarádili jsme se někdy kolem roku 2005 na závodech českého poháru a od té doby trávili na horách spoustu času — po soustředěních, po závodech, cestovali jsme po USA a tak dále.
+              Tomáš Tuzar a Filip Gutwirth se potkali v roce 2005 na závodech českého poháru. Od té chvíle je pojí nejen přátelství, ale hlavně sdílená vášeň pro snowboarding — společně objeli hory od Alp po Rocky Mountains a strávili na prkně víc dnů, než by sami spočítali.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Někdy kolem roku 2018 jsme společně s několika rodiči mladých svěřenců — snowboardových nadějí — založili klub SnowEagles. Ten jsme vedli až do roku 2025, kdy se většina našich mlaďáků dostala do české reprezentace.
+              V roce 2018 se rozhodli své zkušenosti předávat dál a spolu s několika rodiči talentovaných jezdců založili klub SnowEagles. Za sedm let jeho vedení se jim podařilo něco výjimečného — většina jejich svěřenců dnes závodí v české reprezentaci.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Vzhledem k tomu, že máme rádi hory a předávání našich zkušeností dál, rozhodli jsme se pokračovat a vracet zpět snowboardingu to, co nám dal. Proto jsme založili SnowSquad — a budeme rádi, když se k nám přidáte.
+              Hory ale neopustili. Naopak — v roce 2025 otevřeli novou kapitolu a založili SnowSquad. Klub, kde předávají to nejlepší ze své kariéry dalším generacím jezdců. Budeme rádi, když se přidáte.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link to="/camps">
