@@ -11,7 +11,7 @@ const images = [
     caption: 'Naše soustředění v Alpách',
   },
   {
-    src: `${BASE}/gallery-2.jpg`,
+    src: `${BASE}/gallery-5.jpg`,
     alt: 'Snowboard akce',
     caption: 'Freestyle triky ve snowparku',
   },
