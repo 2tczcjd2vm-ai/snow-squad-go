@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -91,7 +91,7 @@ export default function UpcomingCampsPreview() {
                   </div>
                   <div className="flex items-center justify-between pt-4 border-t border-border/50">
                     <span className="font-heading font-bold text-xl text-primary">
-                      {camp.price?.toLocaleString('cs-CZ')} Kč
+                      {camp.price ? camp.price.toLocaleString('cs-CZ') + ' Kč' : 'Cena bude upřesněna'}
                     </span>
                     <Button
                       size="sm"

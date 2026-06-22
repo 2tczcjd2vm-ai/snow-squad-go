@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -119,7 +119,7 @@ export default function ReservationDialog({ camp, open, onClose }) {
               <div className="bg-muted rounded-xl p-4 text-sm">
                 <div className="flex justify-between mb-1">
                   <span className="text-muted-foreground">Cena soustředění</span>
-                  <span className="font-semibold">{camp.price?.toLocaleString('cs-CZ')} Kč</span>
+                  <span className="font-semibold">{camp.price ? camp.price.toLocaleString('cs-CZ') + ' Kč' : 'Cena bude upřesněna'}</span>
                 </div>
                 <p className="text-xs text-muted-foreground mt-2">
                   Po odeslání rezervace vás budeme kontaktovat s dalšími informacemi o platbě.

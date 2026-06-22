@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { format } from 'date-fns';
 import { cs } from 'date-fns/locale';
 import { Button } from "@/components/ui/button";
@@ -63,7 +63,7 @@ export default function CampCard({ camp, onReserve, index }) {
         <div className="flex items-center justify-between pt-4 border-t border-border/50">
           <div>
             <span className="text-2xl font-heading font-bold text-primary">
-              {camp.price?.toLocaleString('cs-CZ')} Kč
+              {camp.price ? camp.price.toLocaleString('cs-CZ') + ' Kč' : 'Cena bude upřesněna'}
             </span>
           </div>
           <Button
