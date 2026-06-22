@@ -35,8 +35,8 @@ export default function HeroSection() {
           </motion.div>
 
           <h1 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl text-white leading-tight mb-6">
-            Snowboard pro mladé
-            <span className="block text-accent">z Prahy</span>
+            Freestyle snowboardový klub
+            <span className="block text-accent">pro mladé talenty</span>
           </h1>
 
           <p className="text-lg text-white/80 leading-relaxed mb-8 max-w-lg">
