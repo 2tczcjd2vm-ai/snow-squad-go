@@ -18,7 +18,7 @@ export default function PhilosophySection() {
           >
             <div className="aspect-[4/3] rounded-2xl overflow-hidden">
               <img
-                src={`${BASE}/gallery-6.jpg`}
+                src={`${BASE}/camp-hintertux2.jpg`}
                 alt="Filosofie týmu"
                 className="w-full h-full object-cover"
               />
