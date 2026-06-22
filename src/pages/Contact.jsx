@@ -100,7 +100,6 @@ function RegisterForm() {
             <SelectValue placeholder="Vyberte úroveň..." />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="beginner">Začátečník — nikdy nebo málo jezdil/a</SelectItem>
             <SelectItem value="intermediate">Pokročilý začátečník — zvládne základní sjezd</SelectItem>
             <SelectItem value="advanced">Pokročilý — jezdí jistě, zkouší park</SelectItem>
             <SelectItem value="expert">Expert — freestyle, carving, freeride</SelectItem>
