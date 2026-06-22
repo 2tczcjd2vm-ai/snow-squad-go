@@ -9,15 +9,7 @@ const navLinks = [
   { label: 'Domů', path: '/' },
   { label: 'Soustředění', path: '/camps' },
   { label: 'Náš tým', path: '/team' },
-  {
-    label: 'Informace',
-    children: [
-      { label: 'Jak to funguje', path: '/#jak-to-funguje' },
-      { label: 'Galerie', path: '/#galerie' },
-      { label: 'Recenze', path: '/#recenze' },
-      { label: 'FAQ', path: '/faq' },
-    ],
-  },
+  { label: 'Filosofie týmu', path: '/#filosofie' },
   { label: 'Kontakt', path: '/contact' },
 ];
 

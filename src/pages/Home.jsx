@@ -7,6 +7,7 @@ import UpcomingCampsPreview from '../components/home/UpcomingCampsPreview';
 import GallerySection from '../components/home/GallerySection';
 import ReviewsSection from '../components/home/ReviewsSection';
 import CTASection from '../components/home/CTASection';
+import PhilosophySection from '../components/home/PhilosophySection';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <HeroSection />
       <StatsSection />
       <AboutSection />
+      <PhilosophySection />
       <HowItWorksSection />
       <UpcomingCampsPreview />
       <GallerySection />
