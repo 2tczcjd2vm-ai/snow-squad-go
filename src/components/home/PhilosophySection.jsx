@@ -36,7 +36,13 @@ export default function PhilosophySection() {
               Filosofie týmu
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-              Zde doplňte text filosofie týmu.
+              Naším hlavním cílem je poskytnout dětem fantastický a smysluplně strávený čas. Mnoho sportovních týmů a klubů se soustředí čistě na výkon a výsledky — často doprovázené nezdravou motivací ze strany rodičů.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              My bychom rádi naopak v dětech vzbudili jejich vlastní motivaci, ukázali jim možnosti i jejich talent. Pokud se budou chtít vydat cestou závodů a profesionálního snowboardingu, uděláme pro ně maximum.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Pokud bude snowboarding sloužit jako prostředek k seberealizaci, zábavě, socializaci a poznávání sebe sama — bez ohledu na závodní výsledky — budeme tu pro ně taky.
             </p>
           </motion.div>
 
