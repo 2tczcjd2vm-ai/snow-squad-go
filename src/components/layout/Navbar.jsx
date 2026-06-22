@@ -1,5 +1,5 @@
 ﻿import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Menu, X, Snowflake, ChevronDown, Settings } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -9,7 +9,7 @@ const navLinks = [
   { label: 'Domů', path: '/' },
   { label: 'Soustředění', path: '/camps' },
   { label: 'Náš tým', path: '/team' },
-  { label: 'Filosofie týmu', path: '/#filosofie' },
+  { label: 'Filosofie týmu', path: '/', hash: 'filosofie' },
   { label: 'Kontakt', path: '/contact' },
 ];
 
@@ -45,6 +45,21 @@ export default function Navbar() {
   const [dropdown, setDropdown] = useState(null);
   const [isAdmin, setIsAdmin] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleHashLink = (e, link) => {
+    if (!link.hash) return;
+    e.preventDefault();
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        document.getElementById(link.hash)?.scrollIntoView({ behavior: 'smooth' });
+      }, 300);
+    } else {
+      document.getElementById(link.hash)?.scrollIntoView({ behavior: 'smooth' });
+    }
+    setOpen(false);
+  };
 
   useEffect(() => {
     base44.auth.me().then(user => {
@@ -95,10 +110,11 @@ export default function Navbar() {
                 </div>
               ) : (
                 <Link
-                  key={link.path}
+                  key={link.label}
                   to={link.path}
+                  onClick={(e) => handleHashLink(e, link)}
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                    location.pathname === link.path
+                    !link.hash && location.pathname === link.path
                       ? 'bg-primary/10 text-primary'
                       : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                   }`}
@@ -159,11 +175,11 @@ export default function Navbar() {
                   </div>
                 ) : (
                   <Link
-                    key={link.path}
+                    key={link.label}
                     to={link.path}
-                    onClick={() => setOpen(false)}
+                    onClick={(e) => handleHashLink(e, link)}
                     className={`block px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
-                      location.pathname === link.path
+                      !link.hash && location.pathname === link.path
                         ? 'bg-primary/10 text-primary'
                         : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                     }`}
