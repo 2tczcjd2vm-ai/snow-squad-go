@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Menu, X, Snowflake, ChevronDown, Settings } from 'lucide-react';
@@ -81,7 +81,7 @@ export default function Navbar() {
             <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center">
               <Snowflake className="w-5 h-5 text-primary-foreground" />
             </div>
-            <span className="font-heading font-bold text-lg">SnowRiders</span>
+            <span className="font-heading font-bold text-lg">SnowSquad</span>
           </Link>
 
           <div className="hidden md:flex items-center gap-1">

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { supabase } from '@/api/supabaseClient';
 import { useQuery } from '@tanstack/react-query';
 import { motion } from 'framer-motion';
@@ -38,7 +38,7 @@ export default function Team() {
               Náš tým
             </h1>
             <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-              Za SnowRiders stojí tým zkušených snowboardistů, trenérů a organizátorů, 
+              Za SnowSquad stojí tým zkušených snowboardistů, trenérů a organizátorů, 
               kteří sdílejí stejnou vášeň — předávat lásku k horám dalším generacím.
             </p>
           </motion.div>

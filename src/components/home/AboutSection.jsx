@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { motion } from 'framer-motion';
 import { Users, MapPin, Trophy, Heart, ShieldCheck, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -51,7 +51,7 @@ export default function AboutSection() {
             <span className="text-sm font-semibold text-accent uppercase tracking-wider">O nás</span>
             <h2 className="font-heading font-bold text-3xl sm:text-4xl mt-3 mb-6">
               Proč si vybrat<br />
-              <span className="text-primary">SnowRiders?</span>
+              <span className="text-primary">SnowSquad?</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-4">
               Jsme pražský snowboardový klub, který vznikl s jedním cílem — dát pražským dětem 

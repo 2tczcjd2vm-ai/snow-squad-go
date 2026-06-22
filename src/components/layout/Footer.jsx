@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 import { Snowflake, Instagram, Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -14,7 +14,7 @@ export default function Footer() {
               <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center">
                 <Snowflake className="w-5 h-5 text-primary-foreground" />
               </div>
-              <span className="font-heading font-bold text-lg">SnowRiders</span>
+              <span className="font-heading font-bold text-lg">SnowSquad</span>
             </Link>
             <p className="text-background/60 text-sm leading-relaxed mb-6">
               Mládežnický snowboardový klub pro pražské děti ve věku 10–15 let. 
@@ -49,9 +49,9 @@ export default function Footer() {
           <div>
             <h4 className="font-heading font-semibold mb-4 text-background/90">Kontakt</h4>
             <div className="space-y-3">
-              <a href="mailto:info@snowriders.cz" className="flex items-center gap-2 text-sm text-background/60 hover:text-background transition-colors">
+              <a href="mailto:info@SnowSquad.cz" className="flex items-center gap-2 text-sm text-background/60 hover:text-background transition-colors">
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                info@snowriders.cz
+                info@SnowSquad.cz
               </a>
               <a href="tel:+420123456789" className="flex items-center gap-2 text-sm text-background/60 hover:text-background transition-colors">
                 <Phone className="w-4 h-4 flex-shrink-0" />
@@ -63,7 +63,7 @@ export default function Footer() {
               </div>
               <a href="https://instagram.com" className="flex items-center gap-2 text-sm text-background/60 hover:text-background transition-colors">
                 <Instagram className="w-4 h-4 flex-shrink-0" />
-                @snowriders_prague
+                @SnowSquad_prague
               </a>
             </div>
           </div>
@@ -85,7 +85,7 @@ export default function Footer() {
 
         <div className="border-t border-background/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm text-background/40">
-            © {new Date().getFullYear()} SnowRiders Praha. Všechna práva vyhrazena.
+            © {new Date().getFullYear()} SnowSquad Praha. Všechna práva vyhrazena.
           </p>
           <div className="flex gap-4">
             <a href="#" className="text-xs text-background/40 hover:text-background/60 transition-colors">Ochrana osobních údajů</a>

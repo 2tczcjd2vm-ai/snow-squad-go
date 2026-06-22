@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { supabase } from '@/api/supabaseClient';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { toast } from 'sonner';
@@ -87,7 +87,7 @@ export default function AdminCamps() {
                 <Snowflake className="w-5 h-5 text-white" />
               </div>
               <div>
-                <h1 className="font-heading font-bold text-white text-xl">SnowRiders Admin</h1>
+                <h1 className="font-heading font-bold text-white text-xl">SnowSquad Admin</h1>
                 <p className="text-white/40 text-xs">Správa soustředění</p>
               </div>
             </div>

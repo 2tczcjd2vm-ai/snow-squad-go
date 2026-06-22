@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -174,7 +174,7 @@ export default function FAQ() {
               Neváhejte nás kontaktovat. Rádi odpovíme na jakoukoli vaši otázku.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <a href="mailto:info@snowriders.cz">
+              <a href="mailto:info@SnowSquad.cz">
                 <Button variant="outline" className="font-semibold">
                   Napsat email
                 </Button>

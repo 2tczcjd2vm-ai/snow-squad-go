@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -240,10 +240,10 @@ export default function Contact() {
                 <h2 className="font-heading font-bold text-xl mb-6">Kontaktní údaje</h2>
                 <div className="space-y-5">
                   {[
-                    { icon: Mail, label: 'Email', value: 'info@snowriders.cz', href: 'mailto:info@snowriders.cz' },
+                    { icon: Mail, label: 'Email', value: 'info@SnowSquad.cz', href: 'mailto:info@SnowSquad.cz' },
                     { icon: Phone, label: 'Telefon', value: '+420 123 456 789', href: 'tel:+420123456789' },
                     { icon: MapPin, label: 'Město', value: 'Praha, Česká republika', href: null },
-                    { icon: Instagram, label: 'Instagram', value: '@snowriders_prague', href: 'https://instagram.com' },
+                    { icon: Instagram, label: 'Instagram', value: '@SnowSquad_prague', href: 'https://instagram.com' },
                   ].map(({ icon: ContactIcon, label, value, href }) => (
                     <div key={label} className="flex items-start gap-4">
                       <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">

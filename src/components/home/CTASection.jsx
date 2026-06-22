@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone } from 'lucide-react';
@@ -44,7 +44,7 @@ export default function CTASection() {
             </a>
           </div>
           <p className="text-primary-foreground/50 text-sm">
-            Nebo nás kontaktujte na <a href="mailto:info@snowriders.cz" className="text-primary-foreground/80 hover:text-primary-foreground underline transition-colors">info@snowriders.cz</a>
+            Nebo nás kontaktujte na <a href="mailto:info@SnowSquad.cz" className="text-primary-foreground/80 hover:text-primary-foreground underline transition-colors">info@SnowSquad.cz</a>
           </p>
         </motion.div>
       </div>
