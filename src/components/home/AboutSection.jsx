@@ -23,7 +23,7 @@ const features = [
   {
     icon: ShieldCheck,
     title: 'Bezpečnost na prvním místě',
-    description: 'Komplexní pojištění, lékárnička na místě, přesné bezpečnostní protokoly a max. 8 dětí na trenéra.',
+    description: 'Komplexní pojištění, lékárnička na místě, přesné bezpečnostní protokoly a max. 5 dětí na trenéra.',
   },
   {
     icon: Heart,
