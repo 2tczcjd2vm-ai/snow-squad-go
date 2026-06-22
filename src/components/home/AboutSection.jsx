@@ -50,16 +50,16 @@ export default function AboutSection() {
           >
             <span className="text-sm font-semibold text-accent uppercase tracking-wider">O nás</span>
             <h2 className="font-heading font-bold text-3xl sm:text-4xl mt-3 mb-6">
-              Proč si vybrat<br />
-              <span className="text-primary">SnowSquad?</span>
+              Náš příběh
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-              Jsme pražský snowboardový klub, který vznikl s jedním cílem — dát pražským dětem 
-              přístup ke světové kvalitě výuky snowboardingu a nezapomenutelným zážitkům v horách.
+              Náš klub byl založen Tomášem Tuzarem a Filipem Gutwirthem. Skamarádili jsme se někdy kolem roku 2005 na závodech českého poháru a od té doby trávili na horách spoustu času — po soustředěních, po závodech, cestovali jsme po USA a tak dále.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Někdy kolem roku 2018 jsme společně s několika rodiči mladých svěřenců — snowboardových nadějí — založili klub SnowEagles. Ten jsme vedli až do roku 2025, kdy se většina našich mlaďáků dostala do české reprezentace.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Za 5 let existence jsme odvedli přes 120 mladých jezdců na soustředění do celé Evropy. 
-              Věříme, že snowboarding není jen sport — je to životní styl, komunita a láska k horám.
+              Vzhledem k tomu, že máme rádi hory a předávání našich zkušeností dál, rozhodli jsme se pokračovat a vracet zpět snowboardingu to, co nám dal. Proto jsme založili SnowSquad — a budeme rádi, když se k nám přidáte.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link to="/camps">
