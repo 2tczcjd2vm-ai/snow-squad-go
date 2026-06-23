@@ -40,9 +40,8 @@ export default function GallerySection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Galerie</span>
-          <h2 className="font-heading font-bold text-3xl sm:text-4xl mt-3 mb-4">
-            Zážitky z akcí
+          <h2 className="font-heading font-bold text-4xl sm:text-5xl mt-3 mb-4">
+            Zážitky z hor
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
             Podívejte se, jak vypadá typické soustředění s naším klubem.
