@@ -6,7 +6,7 @@ const BASE = 'https://velzztwnhpchyojopzkv.supabase.co/storage/v1/object/public/
 
 const images = [
   {
-    src: `${BASE}/gallery-1.jpg`,
+    src: `${BASE}/gallery-1.jpg?v=2`,
     alt: 'Snowboard na svahu',
     caption: 'Naše soustředění v Alpách',
   },
@@ -16,7 +16,7 @@ const images = [
     caption: 'Freestyle triky ve snowparku',
   },
   {
-    src: `${BASE}/gallery-3.jpg`,
+    src: `${BASE}/gallery-3.jpg?v=2`,
     alt: 'Jezdec ve vzduchu',
     caption: 'Ranní trénink s instruktorem',
   },
