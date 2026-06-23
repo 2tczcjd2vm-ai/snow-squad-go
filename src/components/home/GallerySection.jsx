@@ -16,7 +16,7 @@ const images = [
     caption: 'Freestyle triky ve snowparku',
   },
   {
-    src: `${BASE}/gallery-3.jpg?v=2`,
+    src: `${BASE}/gallery-3.jpg?v=3`,
     alt: 'Jezdec ve vzduchu',
     caption: 'Ranní trénink s instruktorem',
   },
