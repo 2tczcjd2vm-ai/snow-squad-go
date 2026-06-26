@@ -84,8 +84,8 @@ export default function AboutSection() {
           >
             <div className="aspect-[4/3] rounded-2xl overflow-hidden">
               <img
-                src="https://velzztwnhpchyojopzkv.supabase.co/storage/v1/object/public/images/parta.jpg"
-                alt="Skvělá parta na sněhu"
+                src="https://velzztwnhpchyojopzkv.supabase.co/storage/v1/object/public/images/nas-pribeh.jpg"
+                alt="Náš příběh"
                 className="w-full h-full object-cover"
               />
             </div>
