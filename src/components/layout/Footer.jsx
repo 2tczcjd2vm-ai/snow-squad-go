@@ -49,7 +49,7 @@ export default function Footer() {
           <div>
             <h4 className="font-heading font-semibold mb-4 text-background/90">Kontakt</h4>
             <div className="space-y-3">
-              <a href="mailto:info@Český Freestyle Klub.cz" className="flex items-center gap-2 text-sm text-background/60 hover:text-background transition-colors">
+              <a href="mailto:tomas.tuzar@seznam.cz" className="flex items-center gap-2 text-sm text-background/60 hover:text-background transition-colors">
                 <Mail className="w-4 h-4 flex-shrink-0" />
                 info@Český Freestyle Klub.cz
               </a>
