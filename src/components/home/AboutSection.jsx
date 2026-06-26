@@ -39,8 +39,17 @@ const features = [
 
 export default function AboutSection() {
   return (
-    <section className="py-24 bg-background" id="o-nas">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      className="py-24 relative" id="o-nas"
+      style={{
+        backgroundImage: `url('https://velzztwnhpchyojopzkv.supabase.co/storage/v1/object/public/images/camp-hintertux.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+      }}
+    >
+      <div className="absolute inset-0 bg-white/80 backdrop-blur-[1px]" />
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
