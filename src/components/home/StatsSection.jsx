@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const stats = [
-  { value: '120+', label: 'Spokojených jezdců' },
+  { value: '30+', label: 'Spokojených jezdců' },
   { value: '6+', label: 'Soustředění ročně' },
   { value: '15', label: 'Let zkušeností' },
   { value: '8', label: 'Destinací v Evropě' },
