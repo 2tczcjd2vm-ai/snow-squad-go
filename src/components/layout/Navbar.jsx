@@ -88,7 +88,7 @@ export default function Navbar() {
             <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center">
               <Snowflake className="w-5 h-5 text-primary-foreground" />
             </div>
-            <span className="font-heading font-bold text-lg">SnowSquad</span>
+            <span className="font-heading font-bold text-lg">Český Freestyle Klub</span>
           </Link>
 
           <div className="hidden md:flex items-center gap-1">

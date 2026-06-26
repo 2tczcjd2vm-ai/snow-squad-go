@@ -59,7 +59,7 @@ export default function AboutSection() {
               V roce 2018 se rozhodli své zkušenosti předávat dál a spolu s několika rodiči talentovaných jezdců založili klub SnowEagles. Za sedm let jeho vedení se jim podařilo něco výjimečného — většina jejich svěřenců dnes závodí v české reprezentaci.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Hory ale neopustili. Naopak — v roce 2025 otevřeli novou kapitolu a založili SnowSquad. Klub, kde předávají to nejlepší ze své kariéry dalším generacím jezdců. Budeme rádi, když se přidáte.
+              Hory ale neopustili. Naopak — v roce 2025 otevřeli novou kapitolu a založili Český Freestyle Klub. Klub, kde předávají to nejlepší ze své kariéry dalším generacím jezdců. Budeme rádi, když se přidáte.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link to="/camps">

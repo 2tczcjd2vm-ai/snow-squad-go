@@ -38,7 +38,7 @@ export default function Team() {
               Náš tým
             </h1>
             <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-              Za SnowSquad stojí tým zkušených snowboardistů, trenérů a organizátorů, 
+              Za Český Freestyle Klub stojí tým zkušených snowboardistů, trenérů a organizátorů, 
               kteří sdílejí stejnou vášeň — předávat lásku k horám dalším generacím.
             </p>
           </motion.div>

@@ -174,7 +174,7 @@ export default function FAQ() {
               Neváhejte nás kontaktovat. Rádi odpovíme na jakoukoli vaši otázku.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <a href="mailto:info@SnowSquad.cz">
+              <a href="mailto:info@Český Freestyle Klub.cz">
                 <Button variant="outline" className="font-semibold">
                   Napsat email
                 </Button>

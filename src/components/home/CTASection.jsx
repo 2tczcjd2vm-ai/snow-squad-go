@@ -44,7 +44,7 @@ export default function CTASection() {
             </a>
           </div>
           <p className="text-primary-foreground/50 text-sm">
-            Nebo nás kontaktujte na <a href="mailto:info@SnowSquad.cz" className="text-primary-foreground/80 hover:text-primary-foreground underline transition-colors">info@SnowSquad.cz</a>
+            Nebo nás kontaktujte na <a href="mailto:info@Český Freestyle Klub.cz" className="text-primary-foreground/80 hover:text-primary-foreground underline transition-colors">info@Český Freestyle Klub.cz</a>
           </p>
         </motion.div>
       </div>

@@ -87,7 +87,7 @@ export default function AdminCamps() {
                 <Snowflake className="w-5 h-5 text-white" />
               </div>
               <div>
-                <h1 className="font-heading font-bold text-white text-xl">SnowSquad Admin</h1>
+                <h1 className="font-heading font-bold text-white text-xl">Český Freestyle Klub Admin</h1>
                 <p className="text-white/40 text-xs">Správa soustředění</p>
               </div>
             </div>

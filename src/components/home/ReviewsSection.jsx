@@ -19,7 +19,7 @@ function StarRating({ rating }) {
 
 const fallbackReviews = [
   { id: '1', author_name: 'Jana Procházková', rating: 5, text: 'Syn byl na dvou soustředěních a je nadšený. Trenéři jsou skvělí, organizace bezchybná. Rozhodně doporučuji!', relation: 'Maminka Jakuba, 13 let' },
-  { id: '2', author_name: 'Pavel Šimek', rating: 5, text: 'Dcera se díky SnowSquad zamilovala do snowboardingu. Za ty dva roky udělala neuvěřitelný pokrok. Skvělá parta!', relation: 'Tatínek Elišky, 12 let' },
+  { id: '2', author_name: 'Pavel Šimek', rating: 5, text: 'Dcera se díky Český Freestyle Klub zamilovala do snowboardingu. Za ty dva roky udělala neuvěřitelný pokrok. Skvělá parta!', relation: 'Tatínek Elišky, 12 let' },
   { id: '3', author_name: 'Markéta Vlčková', rating: 5, text: 'Super přístup k dětem, bezpečnost na prvním místě. Syn se vždy nemůže dočkat dalšího soustředění.', relation: 'Maminka Adama, 11 let' },
 ];
 
