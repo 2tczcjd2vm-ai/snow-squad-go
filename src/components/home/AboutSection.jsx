@@ -17,8 +17,8 @@ const features = [
   },
   {
     icon: Trophy,
-    title: 'Certifikovaní trenéři',
-    description: 'Všichni naši instruktoři mají mezinárodní certifikaci a bohaté zkušenosti s výukou dětí a mládeže.',
+    title: 'Profesionální trenéři',
+    description: 'Naši trenéři dlouhá léta závodili profesionálně na snowboardu. Předávají dětem zkušenosti přímo z vrcholového sportu.',
   },
   {
     icon: ShieldCheck,
