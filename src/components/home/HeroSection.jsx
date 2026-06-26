@@ -58,35 +58,6 @@ export default function HeroSection() {
             </Link>
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            className="flex flex-wrap gap-6"
-          >
-            <div className="flex items-center gap-2">
-              <div className="flex -space-x-1">
-                {['M','A','T','L'].map((l, i) => (
-                  <div key={i} className="w-7 h-7 rounded-full bg-accent/30 border-2 border-white/30 flex items-center justify-center">
-                    <span className="text-xs font-bold text-white">{l}</span>
-                  </div>
-                ))}
-              </div>
-              <span className="text-sm text-white/70">120+ spokojených jezdců</span>
-            </div>
-            <div className="flex items-center gap-1.5">
-              <div className="flex">
-                {[1,2,3,4,5].map(i => (
-                  <Star key={i} className="w-4 h-4 fill-accent text-accent" />
-                ))}
-              </div>
-              <span className="text-sm text-white/70">Hodnocení 5/5</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Users className="w-4 h-4 text-white/60" />
-              <span className="text-sm text-white/70">6–10 soustředění ročně</span>
-            </div>
-          </motion.div>
         </motion.div>
       </div>
 
