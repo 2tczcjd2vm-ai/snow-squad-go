@@ -61,15 +61,6 @@ export default function HeroSection() {
         </motion.div>
       </div>
 
-      {/* Admin link */}
-      <div className="absolute top-4 right-4 z-20">
-        <Link to="/admin/camps">
-          <Button size="sm" variant="ghost" className="text-white/40 hover:text-white hover:bg-white/10 text-xs gap-1.5">
-            <Settings className="w-3.5 h-3.5" />
-            Admin
-          </Button>
-        </Link>
-      </div>
 
       {/* Scroll indicator */}
       <motion.div
