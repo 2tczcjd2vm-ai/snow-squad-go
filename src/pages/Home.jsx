@@ -1,5 +1,6 @@
 import React from 'react';
 import HeroSection from '../components/home/HeroSection';
+import StatsSection from '../components/home/StatsSection';
 import AboutSection from '../components/home/AboutSection';
 import HowItWorksSection from '../components/home/HowItWorksSection';
 import UpcomingCampsPreview from '../components/home/UpcomingCampsPreview';
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <div>
       <HeroSection />
+      <StatsSection />
       <AboutSection />
       <PhilosophySection />
       <HowItWorksSection />
