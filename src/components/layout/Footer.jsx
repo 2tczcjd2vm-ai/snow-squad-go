@@ -22,7 +22,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-3">
               <a
-                href="https://instagram.com"
+                href="https://instagram.com/freestyleklub_prague"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-xl bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors"
@@ -61,7 +61,7 @@ export default function Footer() {
                 <MapPin className="w-4 h-4 flex-shrink-0" />
                 Praha, Česká republika
               </div>
-              <a href="https://instagram.com" className="flex items-center gap-2 text-sm text-background/60 hover:text-background transition-colors">
+              <a href="https://instagram.com/freestyleklub_prague" className="flex items-center gap-2 text-sm text-background/60 hover:text-background transition-colors">
                 <Instagram className="w-4 h-4 flex-shrink-0" />
                 @freestyleklub_prague
               </a>
