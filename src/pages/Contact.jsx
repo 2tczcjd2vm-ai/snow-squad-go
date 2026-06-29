@@ -270,7 +270,12 @@ export default function Contact() {
                 <h2 className="font-heading font-bold text-xl mb-6">Kontaktní údaje</h2>
                 <div className="space-y-5">
                   {[
-                    { icon: Mail, label: 'Email', value: 'tomas.tuzar@seznam.cz', href: 'mailto:tomas.tuzar@seznam.cz"flex items-start gap-4">
+                    { icon: Mail, label: 'Email', value: 'tomas.tuzar@seznam.cz', href: 'mailto:tomas.tuzar@seznam.cz' },
+                    { icon: Phone, label: 'Telefon', value: '+420 737 778 316', href: 'tel:+420737778316' },
+                    { icon: MapPin, label: 'Město', value: 'Praha, Česká republika' },
+                    { icon: Instagram, label: 'Instagram', value: '@freestyleklub_prague', href: 'https://instagram.com/freestyleklub_prague' },
+                  ].map(({ icon: ContactIcon, label, value, href }) => (
+                    <div key={label} className="flex items-start gap-4">
                       <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                         <ContactIcon className="w-5 h-5 text-primary" />
                       </div>
