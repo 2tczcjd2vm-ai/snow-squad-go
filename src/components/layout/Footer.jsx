@@ -63,7 +63,7 @@ export default function Footer() {
               </div>
               <a href="https://instagram.com" className="flex items-center gap-2 text-sm text-background/60 hover:text-background transition-colors">
                 <Instagram className="w-4 h-4 flex-shrink-0" />
-                @Český Freestyle Klub_prague
+                @freestyleklub_prague
               </a>
             </div>
           </div>
