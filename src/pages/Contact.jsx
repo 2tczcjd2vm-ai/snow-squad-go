@@ -101,7 +101,7 @@ function RegisterForm() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="space-y-2">
           <Label htmlFor="reg-phone">Telefon *</Label>
-          <Input id="reg-phone" type="tel" value={form.phone} onChange={set('phone')} required placeholder="+420 123 456 789" />
+          <Input id="reg-phone" type="tel" value={form.phone} onChange={set('phone')} required placeholder="+420 737 778 316" pattern="[+]?[0-9\s\-]{9,15}" title="Zadejte platné telefonní číslo (např. +420 737 778 316)" />
         </div>
         <div className="space-y-2">
           <Label htmlFor="reg-age">Věk dítěte / jezdce *</Label>
