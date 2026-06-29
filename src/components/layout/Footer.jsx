@@ -51,11 +51,11 @@ export default function Footer() {
             <div className="space-y-3">
               <a href="mailto:tomas.tuzar@seznam.cz" className="flex items-center gap-2 text-sm text-background/60 hover:text-background transition-colors">
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                info@Český Freestyle Klub.cz
+                tomas.tuzar@seznam.cz
               </a>
-              <a href="tel:+420123456789" className="flex items-center gap-2 text-sm text-background/60 hover:text-background transition-colors">
+              <a href="tel:+420737778316" className="flex items-center gap-2 text-sm text-background/60 hover:text-background transition-colors">
                 <Phone className="w-4 h-4 flex-shrink-0" />
-                +420 123 456 789
+                +420 737 778 316
               </a>
               <div className="flex items-center gap-2 text-sm text-background/60">
                 <MapPin className="w-4 h-4 flex-shrink-0" />
