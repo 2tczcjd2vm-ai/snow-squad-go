@@ -27,12 +27,28 @@ function RegisterForm() {
   });
 
   const mutation = useMutation({
-    mutationFn: (data) => supabase.from('contact_messages').insert({
-      name: data.name,
-      email: data.email,
-      phone: data.phone,
-      message: `PŘIHLÁŠKA DO KLUBU\nVěk jezdce: ${data.child_age} let\nÚroveň ježdění: ${data.skill_level}\n\n${data.message}`,
-    }),
+    mutationFn: async (data) => {
+      await supabase.from('contact_messages').insert({
+        name: data.name,
+        email: data.email,
+        phone: data.phone,
+        message: `PŘIHLÁŠKA DO KLUBU\nVěk jezdce: ${data.child_age} let\nÚroveň ježdění: ${data.skill_level}\n\n${data.message}`,
+      });
+      await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: 'c56396d2-05dd-4468-adb9-a1e82a67151d',
+          subject: `Nová přihláška do klubu — ${data.name}`,
+          name: data.name,
+          email: data.email,
+          phone: data.phone,
+          'Věk jezdce': `${data.child_age} let`,
+          'Úroveň': data.skill_level,
+          message: data.message || '(bez zprávy)',
+        }),
+      });
+    },
     onSuccess: () => {
       setSuccess(true);
       toast.success('Přihláška odeslána!');
@@ -142,7 +158,21 @@ function ContactForm() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' });
 
   const mutation = useMutation({
-    mutationFn: (data) => supabase.from('contact_messages').insert(data),
+    mutationFn: async (data) => {
+      await supabase.from('contact_messages').insert(data);
+      await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: 'c56396d2-05dd-4468-adb9-a1e82a67151d',
+          subject: `Nový dotaz — ${data.name}`,
+          name: data.name,
+          email: data.email,
+          phone: data.phone || '(nezadáno)',
+          message: data.message,
+        }),
+      });
+    },
     onSuccess: () => {
       setSuccess(true);
       toast.success('Zpráva odeslána!');
