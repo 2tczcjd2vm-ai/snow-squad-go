@@ -105,7 +105,7 @@ function RegisterForm() {
         </div>
         <div className="space-y-2">
           <Label htmlFor="reg-age">Věk dítěte / jezdce *</Label>
-          <Input id="reg-age" type="number" min="10" max="15" value={form.child_age} onChange={set('child_age')} required placeholder="12" />
+          <Input id="reg-age" type="number" min="1" value={form.child_age} onChange={set('child_age')} required placeholder="12" />
         </div>
       </div>
 
